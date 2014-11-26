@@ -1,0 +1,12 @@
+# Site settings
+title: Hoang Stark's Blog
+email: iam@hoangstark.com
+description: > # this means to ignore newlines until "baseurl:"
+  think simple. be unique.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hoangstark.github.dev" # the base hostname & protocol for your site
+twitter_username: hoangstark
+github_username:  hoangstark
+
+# Build settings
+markdown: kramdown
