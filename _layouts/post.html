@@ -1,29 +1,98 @@
 ---
 layout: default
+disqus: true
+facebook: false
+archive: false
+post_class: post-template
 ---
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1597438677146073&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="post">
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{ site.baseurl }}rss.xml">Subscribe</a>
+    </nav>
+</header>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} - {{ page.meta }}{% endif %} in {{ page.categories }}</p>
-  </header>
+<main class="content" role="main">
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+    <article class="post">
 
-<h2>Comments</h2>
-<div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta">                
+                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+                {% if page.categories.size > 0 %} 
+                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }} 
+                {% endif %}
+            </section>
+        </header>
 
-  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
+<!--         <header class="post-header">
+            <a id="blog-logo" href="{{site.url}}">
+                {% if site.logo %}
+                    <img src="{{site.logo}}" alt="{{ site.name }}" />
+                {% else %}
+                    <span class="blog-title">{{ site.name }}</span>
+                {%endif%} 
+            </a>
+        </header> -->
+        
+        <!-- <span class="post-meta">
+            <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            {% if page.categories.size > 0 %} 
+                {{ page.categories | array_to_sentence_string | prepend: 'on ' }} 
+            {% endif %}
+        </span> -->
 
-</div>
+        <!-- <h1 class="post-title">{{ page.title }}</h1> -->
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        {% if page.archive %}
+        <section class="archive">
+            <h5>Archive</h5>
+            <ul>
+                {% for post in site.posts %}
+                    <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}    
+            </ul>
+        </section>
+        {% endif %}
+
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            {% if site.author %}
+                <figure class="author-image">
+                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
+                    <span class="hidden">{{site.author}}'s Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> {{ site.author }} </h4>
+                    <!-- Author Bio -->
+                    <p> 
+                        Hoang “hoangstark” Le is an Vietnamese full-stack developer.
+                    </p>
+                </section>                
+            {% endif %}
+
+            <!-- Share links section -->
+            {% include share.html %}
+            
+            <!-- Disqus comments -->
+            {% if page.disqus %}
+                {% include disqus.html %}
+            {% endif %}
+
+            <!-- Facebook comments -->
+            {% if page.facebook %}
+                {% include facebook.html %}
+            {% endif %}
+            
+        </footer>
+
+    </article>
+
+</main>

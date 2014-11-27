@@ -1,12 +1,14 @@
-# Site settings
-title: Hoang Stark's Blog
-email: iam@hoangstark.com
-description: > # this means to ignore newlines until "baseurl:"
-  think simple. be unique.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://iam.hoangstark.com" # the base hostname & protocol for your site
-twitter_username: hoangstark
-github_username:  hoangstark
+name: Hoang Stark's Blog
+description: think simple. be unique.
+meta_description: "Hoang Stark's Blog about Technology, Programing, Smartphones and Web Design."
 
-# Build settings
-markdown: kramdown
+markdown: redcarpet
+highlighter: pygments
+logo: false
+paginate: 15
+baseurl: http://iam.hoangstark.com/
+domain_name: 'http://iam.hoangstark.com'
+
+# Details for the RSS feed generator
+url:            'http://iam.hoangstark.com'
+author:         'Hoang Stark'

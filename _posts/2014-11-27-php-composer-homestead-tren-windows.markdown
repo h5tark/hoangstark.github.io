@@ -6,9 +6,9 @@ categories: laravel
 author: Hoang Stark
 image: /images/Screenshot 2014-11-27 03.40.12.jpg
 ---
-![PHP 5.6, Composer và Homestead 2.0 trên Windows]({{ site.url }}/images/Screenshot 2014-11-27 03.40.12.jpg)
-
 Cài đặt Homestead trên Linux hay OSX thì khá dễ dàng, tuy nhiên mình thấy nhiều bạn gặp khó khăn trong quá trình cài đặt lên Windows. Bài viết này mình dành cho đối tượng là các bạn newbie không quen làm việc với command, cho nên mặc dù chưa phải là cách cài hay nhất nhưng mình cố gắng đơn giản hóa các bước để phù hợp với các bạn.
+
+![PHP 5.6, Composer và Homestead 2.0 trên Windows]({{ site.url }}/images/Screenshot 2014-11-27 03.40.12.jpg)
 
 ### Bước 1: Cài PHP
 

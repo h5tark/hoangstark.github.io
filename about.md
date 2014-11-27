@@ -1,7 +1,6 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About me 
 ---
 
-Hoang "hoangstark" Le is an Vietnamese full-stack developer. Hoang is the former co-administrator and web developer of SECafe.vn, the Vietnam’s first Sony Fan Club forum he co-founded with Quynh "fox" Lai.
+This is a static page. It could be an 'about page' if you'd like.
