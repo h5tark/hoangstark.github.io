@@ -7,9 +7,9 @@ author: Hoang Stark
 ---
 ![PHP 5.6, Composer và Homestead 2.0 trên Windows]({{ site.url }}/images/Screenshot 2014-11-27 03.40.12.jpg)
 
-Cài đặt Homestead trên Linux hay OSX thì khá dễ dàng, tuy nhiên mình thấy nhiều bạn gặp khó khăn trong quá trình cài đặt lên Windows. Do đó mình đã cài thử và rút ra được phương pháp nhanh gọn như sau
+Cài đặt Homestead trên Linux hay OSX thì khá dễ dàng, tuy nhiên mình thấy nhiều bạn gặp khó khăn trong quá trình cài đặt lên Windows. Bài viết này mình dành cho đối tượng là các bạn newbie không quen làm việc với command, cho nên mặc dù chưa phải là cách cài hay nhất nhưng mình cố gắng đơn giản hóa các bước để phù hợp với các bạn.
 
-**Bước 1: Cài PHP**
+### Bước 1: Cài PHP
 
 - Tải Visual [C++ Redistributable for Visual Studio 2012 x86 or x64](http://www.microsoft.com/en-us/download/details.aspx?id=30679) và cài đặt.
 - Tải PHP 5.6.3 tại đây:
@@ -34,14 +34,13 @@ extension_dir = "C:\PHP\ext"
 
 - Sau đó chép thư PHP mục này vào ổ C:\
 
-**Bước 2: Cài Virtual Box và Vagrant**
+### Bước 2: Cài Virtual Box và Vagrant
 
 - Tải Virtual Box mới nhất tại: [https://www.virtualbox.org](https://www.virtualbox.org)
 - Tải Vagrant mới nhất tại: [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
-
 - Cài đặt cả hai ứng dụng trên.
 
-**Bước 3: Cài Composer**
+### Bước 3: Cài Composer
 
 - Tải file cài đặt Composer: [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe)
 - Chạy file này, đánh dấu vào Install Shell Menus và click Next. Ấn Browse để chọn đến file C:\PHP\php.exe rồi click Next và cài đặt như bình thường.
@@ -49,7 +48,7 @@ image
 
 ![Cài đặt Composer]({{ site.url }}/images/Screenshot 2014-11-27 03.56.11.jpg)
 
-**Bước 4: Cài homestead**
+### Bước 4: Cài homestead
 
 - Mở Command Promt và chạy 
 {% highlight php %}
@@ -82,7 +81,7 @@ homestead init
 Như vậy là trong thư mục ***C:\Users\Hoang Stark*** sẽ xuất hiện thêm thư mục .***homestead*** có chứa file ***Homestead.yaml*** ở bên trong để các bạn có thể cấu hình.
 Chi tiết về ***Homestead.yaml*** có thể xem bài viết của @luuhoangnam tại [blog](http://blog.luuhoangnam.com/virtual-machine/homestead-youre-my-friend.html) hoặc [tài liệu của Laravel](http://laravel.com/docs/4.2/homestead)
 
-**Bước 5: Tạo Public và Private SSH Key
+### Bước 5: Tạo Public và Private SSH Key
 
 Bước này chúng ta sẽ sử dụng Putty Key Generator để tạo SSH Key
 
@@ -97,10 +96,10 @@ mkdir .ssh
 - Ghi tên file là ***id_rsa.pub***
 ![Lưu Public Key](/images/Screenshot 2014-11-27 06.35.02.jpg)
 - Tiếp tục Save Private Key, sẽ có một cảnh báo nhưng các bạn có thể bỏ qua bằng cách ấn Yes
-![Cảnh báo khi lưu Private Key]({{ site.url }}/images/Screenshot 2014-11-27 06.38.07.png)
+![Cảnh báo khi lưu Private Key]({{ site.url }}/images/Screenshot 2014-11-27 06.38.07.jpg)
  và chuyển tới thư mục ***C:\Users\<username>\.ssh***
 - Ghi tên file là ***id_rsa***
 ![Lưu Private Key]({{ site.url }}/images/Screenshot 2014-11-27 06.38.07.jpg)
-- Lúc này bạn đã có thể chạy lệnh ***homestead up**
-- Lần chạy đầu tiên Firewall sẽ hỏi bạn và bạn chọn như hình sau rồi ấn Allow
+- Lúc này bạn đã có thể chạy lệnh ***homestead up***
+- Lần chạy đầu tiên Firewall sẽ hỏi bạn và bạn chọn như hình sau rồi ấn Allow access
 ![Lựa chọn Firewall cho Homestead]({{ site.url }}/images/Screenshot 2014-11-27 06.40.59.jpg)

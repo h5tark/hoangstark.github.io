@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1597438677146073&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="post">
 
   <header class="post-header">
@@ -11,5 +20,10 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+
+<h2>Để lại comment nếu bạn gặp vấn đề</h2>
+<div class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+  <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-numposts="5" data-colorscheme="light" data-width="100%"></div>
 
 </div>
