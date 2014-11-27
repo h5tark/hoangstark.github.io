@@ -81,3 +81,26 @@ homestead init
 
 Như vậy là trong thư mục ***C:\Users\Hoang Stark*** sẽ xuất hiện thêm thư mục .***homestead*** có chứa file ***Homestead.yaml*** ở bên trong để các bạn có thể cấu hình.
 Chi tiết về ***Homestead.yaml*** có thể xem bài viết của @luuhoangnam tại [blog](http://blog.luuhoangnam.com/virtual-machine/homestead-youre-my-friend.html) hoặc [tài liệu của Laravel](http://laravel.com/docs/4.2/homestead)
+
+**Bước 5: Tạo Public và Private SSH Key
+
+Bước này chúng ta sẽ sử dụng Putty Key Generator để tạo SSH Key
+
+- Mở Conmmand Prompt (CMD), mặc định CMD sẽ ở thư mục C:\Users\<username> và chạy lệnh: 
+{% highlight php %}
+mkdir .ssh
+{% endhighlight %}
+- Tải [puttygen.exe](http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe) và chạy file này sau đó ấn nút Generate.
+- Để quá trình tạo key diễn ra nhanh thì các bạn rê chuột qua lại ở phần màu xám bên dưới thanh tiến trình màu xanh
+![Giao diện puttygen lúc tạo key]({{ site.url }}/images/Screenshot 2014-11-27 06.33.40.jpg)
+- Sau khi tạo key xong, các bạn ấn nút Save Public Key và chuyển tới thư mục ***C:\Users\<username>\.ssh***
+- Ghi tên file là ***id_rsa.pub***
+![Lưu Public Key](/images/Screenshot 2014-11-27 06.35.02.jpg)
+- Tiếp tục Save Private Key, sẽ có một cảnh báo nhưng các bạn có thể bỏ qua bằng cách ấn Yes
+![Cảnh báo khi lưu Private Key]({{ site.url }}/images/Screenshot 2014-11-27 06.38.07.png)
+ và chuyển tới thư mục ***C:\Users\<username>\.ssh***
+- Ghi tên file là ***id_rsa***
+![Lưu Private Key]({{ site.url }}/images/Screenshot 2014-11-27 06.38.07.jpg)
+- Lúc này bạn đã có thể chạy lệnh ***homestead up**
+- Lần chạy đầu tiên Firewall sẽ hỏi bạn và bạn chọn như hình sau rồi ấn Allow
+![Lựa chọn Firewall cho Homestead]({{ site.url }}/images/Screenshot 2014-11-27 06.40.59.jpg)
