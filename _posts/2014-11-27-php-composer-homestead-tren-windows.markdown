@@ -15,8 +15,8 @@ Cài đặt Homestead trên Linux hay OSX thì khá dễ dàng, tuy nhiên mình
 - Tải Visual [C++ Redistributable for Visual Studio 2012 x86 or x64](http://www.microsoft.com/en-us/download/details.aspx?id=30679) và cài đặt.
 - Tải PHP 5.6.3 tại đây:
 	- Windows 32 bit: [php-5.6.3-Win32-VC11-x86.zip](http://windows.php.net/downloads/releases/php-5.6.3-Win32-VC11-x86.zip)
-	- Windows 64 bit: [php-5.6.3-nts-Win32-VC11-x64.zip](http://windows.php.net/downloads/releases/php-5.6.3-nts-Win32-VC11-x64.zip)
-- Giải nén file zip trên và đổi tên thư mục php-5.6.3-nts-Win32-VC11-xXX thành PHP.
+	- Windows 64 bit: [php-5.6.3-Win32-VC11-x64.zip](http://windows.php.net/downloads/releases/php-5.6.3-Win32-VC11-x64.zip)
+- Giải nén file zip trên và đổi tên thư mục ***php-5.6.3-nts-Win32-VC11-xXX*** thành PHP.
 - Bên trong thư mục PHP này các bạn đổi tên file php.ini-production thành php.ini. Mở file này bằng trình soạn thảo như Sublime Text hoặc trình tương tự cho dễ sửa.
 - Tìm đoạn sau (dòng 737) 
 {% highlight php %}
