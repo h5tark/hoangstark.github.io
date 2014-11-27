@@ -4,6 +4,7 @@ title:  "PHP 5.6, Composer và Homestead 2.0 trên Windows"
 date:   2014-11-27 04:54:45
 categories: laravel
 author: Hoang Stark
+image: /images/Screenshot 2014-11-27 03.40.12.jpg
 ---
 ![PHP 5.6, Composer và Homestead 2.0 trên Windows]({{ site.url }}/images/Screenshot 2014-11-27 03.40.12.jpg)
 
