@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Get homestead working with Windows 10"
-date:   2015-07-31 10:39:68
+date:   2015-07-31 10:39:11
 categories: windows
 author: Hoang Stark
 ---
