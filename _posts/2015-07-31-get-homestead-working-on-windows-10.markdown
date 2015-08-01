@@ -28,16 +28,6 @@ To solve this issue, please follow below instructions:
 
 ### Install:
 1. Install Virtualbox 5 and Vagrant 1.7.4
-2. Comment line 17: config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10" in homestead.rb
-3. Comment line 64: b.use ClearNetworkInterfaces in action.rb (path ~\HashiCorp\Vagrant\embedded\gems\gems\vagrant-1.7.4\plugins\providers\virtualbox\action.rb)
-4. Homestead init and/or up
-5. Homestead halt
-6. In Virtualbox preferences -> network -> host-only networks edit existing Host-Only adapter and add 192.168.10.10 as IP address
-7. Select homestead box in Virtualbox and go to settings -> network -> adapter 2 and select Host-only network (the one edited in step above)
-8. Homestead up, provision
-
-### Cài đặt
-1. Install Virtualbox 5 and Vagrant 1.7.4
 2. Go to *C:\Users\<YourWindowsUserName>\AppData\Roaming\Composer\vendor\laravel\homestead\scripts* then open *homestead.rb*
 3. Add # before line 17: *config.vm.network :private_network, ip: settings["ip"] ||= "192.168.10.10"* in *homestead.rb*
 4. Vào *C:\HashiCorp\Vagrant\embedded\gems\gems\vagrant-1.7.4\plugins\providers\virtualbox* mở *action.rb*
