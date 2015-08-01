@@ -41,7 +41,7 @@ VBoxManage.exe: error: Context: "int __cdecl handleCreate(struct HandlerArg *,in
 
 Và Yeah! Machine booted and ready!
 
-[Homestead on Windows 10]({{ site.url }}/images/Screenshot 2015-07-31 03.09.16.png)
+![Homestead on Windows 10]({{ site.url }}/images/Screenshot 2015-07-31 03.09.16.png)
 
 ### Có thể bạn tìm
 - Hướng dẫn cài đặt vagrant homestead trên Windows 10

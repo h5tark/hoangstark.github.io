@@ -51,7 +51,7 @@ To solve this issue, please follow below instructions:
 
 Yeah! Machine booted and ready!
 
-[Homestead on Windows 10]({{ site.url }}/images/Screenshot 2015-07-31 03.09.16.png)
+![Homestead on Windows 10]({{ site.url }}/images/Screenshot 2015-07-31 03.09.16.png)
 
 ### You may search for
 - How to install vagrant homestead on Windows 10
