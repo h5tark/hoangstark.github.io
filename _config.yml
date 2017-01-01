@@ -2,7 +2,7 @@ name: Hoang Stark's Blog
 description: think simple. be unique.
 meta_description: "Hoang Stark's Blog about Technology, Programing, Smartphones and Web Design."
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 logo: false
 paginate: 15
