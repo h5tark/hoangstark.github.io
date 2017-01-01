@@ -3,7 +3,7 @@ description: think simple. be unique.
 meta_description: "Hoang Stark's Blog about Technology, Programing, Smartphones and Web Design."
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: http://iam.hoangstark.com/
