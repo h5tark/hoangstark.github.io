@@ -5,6 +5,9 @@ date:   2017-08-31 11:16:00
 categories: laravel
 author: Hoang Stark
 ---
+
+![Laravel 5.5]({{ site.url }}/images/laravel-5.5.png)
+
 Chào mọi người, có thể thấy là rất nhiều ace cảm thấy việc ra phiên bản mới của Laravel hàng loạt khiến cho "không kịp trở tay", chưa học hết bản này đã qua bản khác. Vây nên nhân dịp `Laravel 5.5 LTS` ra mắt, mình có đôi điều muốn chia sẻ với các bạn.
 
 ## Laravel ra phiên bản mới liên tục, tại sao?
