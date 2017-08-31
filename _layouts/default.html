@@ -16,9 +16,11 @@
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
 
-    {% if page.image %}  
-    <meta property="og:image" content="{{ site.url }}{{ page.image }}" /> 
+    {% if page.image %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
     {% endif %}
+
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext,vietnamese" rel="stylesheet">
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
@@ -26,13 +28,13 @@
     {{ content }}
     <footer class="site-footer clearfix">
       <section class="copyright">
-        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; 
+        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy;
               {{date format="YYYY"}} &bull; All rights reserved.
       </section>
       <section class="poweredby">Remaked theme based on Kasper theme
       </section>
     </footer>
-    
+
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
@@ -46,6 +48,6 @@
       ga('create', 'UA-8955873-34', 'auto');
       ga('send', 'pageview');
 
-    </script>  
+    </script>
 </body>
 </html>
