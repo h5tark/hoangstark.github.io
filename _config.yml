@@ -12,3 +12,6 @@ domain_name: 'http://iam.hoangstark.com'
 # Details for the RSS feed generator
 url:            'http://iam.hoangstark.com'
 author:         'Hoang Stark'
+
+gems:
+  - jekyll-feed
